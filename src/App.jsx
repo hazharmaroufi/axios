@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Post from "./components/Post";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -10,12 +11,13 @@ function App() {
   }, []);
   return (
     <>
-      <h1>Hazhar Maroufi</h1>
+      {/* <h1>Hazhar Maroufi</h1>
       <ul>
         {todos.map((todo) => (
           <li key={todo.id}>{todo.title}</li>
         ))}
-      </ul>
+      </ul> */}
+      <Post />
     </>
   );
 }
