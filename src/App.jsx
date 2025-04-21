@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Post from "./components/Post";
+import Delete from "./components/Delete";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -17,7 +18,8 @@ function App() {
           <li key={todo.id}>{todo.title}</li>
         ))}
       </ul> */}
-      <Post />
+      {/* <Post /> */}
+      <Delete />
     </>
   );
 }
